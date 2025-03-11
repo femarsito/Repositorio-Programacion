@@ -29,12 +29,12 @@ public class EjerciciosPreparación {
 		mostrarMatriz(matrizRotada); 
 	}
 	// Función para rotar la matriz 90 grados hacia la derecha
-	public static int [][] rotaMatriz(int[][] matriz){
+	public static int[][] rotaMatriz(int[][] matriz) {
 		int n = matriz.length;
-		int [][] matrizRotada = new int [n][n];
-		for (int fila = 0 ; fila < n ; fila++) {
-			for (int columna = 0 ; columna < matriz[fila].length ; columna++) {
-				matrizRotada[columna][n-1-fila] = matriz[fila][columna];
+		int[][] matrizRotada = new int[n][n];
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < matriz[i].length; j++) {
+				matrizRotada[j][n - 1 - i] = matriz[i][j];
 			}
 		}
 		return matrizRotada;

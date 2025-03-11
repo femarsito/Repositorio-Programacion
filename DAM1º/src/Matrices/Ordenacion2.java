@@ -22,6 +22,6 @@ System.out.println("La lista de nombres ordenada alfabeticamente es:");
 for (String nombre : nombres) {
 	System.out.print(nombre + " ");
 }
-		}
+	}
 }
 
