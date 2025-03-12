@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="retojueves (1)/" kind="src" path="DAM1ºCLONE/src"/>
+	<classpathentry kind="src" path="DAM1ºCLONE/src/retojueves (1)"/>
+	<classpathentry kind="output" path="DAM1ºCLONE/bin"/>
+</classpath>
