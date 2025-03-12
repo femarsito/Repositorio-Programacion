@@ -1,7 +1,7 @@
 package PruebaGIT;
 
 public class hola {
-private void SYSOUT() { ADIOOOOOOS
+private void sysout() {
 	// TODO Auto-generated method stub
 
 }
