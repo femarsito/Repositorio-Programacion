@@ -2,7 +2,7 @@ package ut6_EventosDeportivos;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
-public abstract class EventoDeportivo implements Ganador {
+public abstract class EventoDeportivo<T> implements Ganador<T> {
     private String nombre;
     private LocalDate fecha;
     private String lugar;
@@ -47,7 +47,7 @@ public abstract class EventoDeportivo implements Ganador {
         participantes.add(participante);
     }
 
+    // Este método debe ser implementado en las subclases
     @Override
-    public abstract Participante obtenerGanador();
-    
+    public abstract T obtenerGanador();
 }

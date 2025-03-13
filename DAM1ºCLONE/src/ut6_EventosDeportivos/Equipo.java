@@ -12,19 +12,45 @@ public class Equipo {
         this.puntos = 0;
     }
 
+    
+
     public String getNombre() {
-        return nombre;
-    }
+		return nombre;
+	}
 
-    public ArrayList<Participante> getJugadores() {
-        return jugadores;
-    }
 
-    public int getPuntos() {
-        return puntos;
-    }
 
-    public void añadirJugador(Participante jugador) {
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+
+
+	public ArrayList<Participante> getJugadores() {
+		return jugadores;
+	}
+
+
+
+	public void setJugadores(ArrayList<Participante> jugadores) {
+		this.jugadores = jugadores;
+	}
+
+
+
+	public int getPuntos() {
+		return puntos;
+	}
+
+
+
+	public void setPuntos(int puntos) {
+		this.puntos = puntos;
+	}
+
+
+
+	public void añadirJugador(Participante jugador) {
         jugadores.add(jugador);
     }
 
@@ -37,7 +63,7 @@ public class Equipo {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Equipo: ").append(nombre).append(", Puntos: ").append(puntos).append("\nJugadores:\n");
+        sb.append("").append(nombre).append(", Puntos: ").append(puntos).append("\nJugadores:\n");
         for (Participante jugador : jugadores) {
             sb.append(jugador.toString()).append("\n");
         }

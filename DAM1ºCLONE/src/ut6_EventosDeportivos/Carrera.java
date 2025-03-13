@@ -2,7 +2,7 @@ package ut6_EventosDeportivos;
 
 import java.time.LocalDate;
 
-public class Carrera extends EventoDeportivo {
+public class Carrera extends EventoDeportivo<Participante> {
     private double distancia;
 
     public Carrera(String nombre, LocalDate fecha, String lugar, double distancia) {
@@ -29,6 +29,10 @@ public class Carrera extends EventoDeportivo {
                 ganador = participante;
             }
         }
-        return ganador; 
+        return ganador; // Retorna el ganador como Participante
     }
+    
+   
+    
+    
 }

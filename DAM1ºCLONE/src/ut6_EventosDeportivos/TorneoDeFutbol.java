@@ -3,7 +3,7 @@ package ut6_EventosDeportivos;
 import java.util.ArrayList;
 import java.time.LocalDate;
 
-public class TorneoDeFutbol extends EventoDeportivo {
+public class TorneoDeFutbol extends EventoDeportivo<Equipo> {
     private ArrayList<Equipo> equipos;
 
     public TorneoDeFutbol(String nombre, LocalDate fecha, String lugar) {
@@ -20,7 +20,7 @@ public class TorneoDeFutbol extends EventoDeportivo {
     }
 
     @Override
-    public Participante obtenerGanador() {
+    public Equipo obtenerGanador() {
         Equipo ganador = null;
         int maxPuntos = -1;
 
@@ -30,6 +30,7 @@ public class TorneoDeFutbol extends EventoDeportivo {
                 ganador = equipo;
             }
         }
-        return ganador; // Retorna el equipo ganador como Participante
+        return ganador; // Retorna el equipo ganador
     }
+   
 }

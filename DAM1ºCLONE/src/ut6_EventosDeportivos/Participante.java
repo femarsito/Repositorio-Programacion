@@ -4,7 +4,7 @@ public class Participante {
     private String nombre;
     private String apellido;
     private int edad;
-    private double tiempo; // segundos
+    private double tiempo; // Tiempo en segundos
 
     public Participante(String nombre, String apellido, int edad) throws ParticipanteNoValidoException {
         if (nombre == null || apellido == null || edad < 14) {
@@ -13,7 +13,7 @@ public class Participante {
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
-        this.tiempo = Double.MAX_VALUE; // inicializar tiempo con valor alto
+        this.tiempo = Double.MAX_VALUE; // Inicializar tiempo a un valor alto
     }
 
     public String getNombre() {
